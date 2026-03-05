@@ -182,12 +182,19 @@ nav {
 }
 
 .image-container {
-    width: 320px;
-    height: 320px;
+    width: 225px;
+    height: 225px;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid var(--border-color);
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: var(--transition-slow);
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(56, 189, 248, 0.3);
+    border-color: var(--accent-color);
 }
 
 .image-container img {
